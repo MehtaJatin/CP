@@ -1,3 +1,10 @@
+/* For your chemistry homework, you wrote out a long chemical formula without any spaces between the elements.
+But then your little brother found your paper and messed up the formula by changing all the lowercase letters to uppercase.
+It's impossible to figure out where one element ends and the next begins! Now you have to restore the formula.
+If there are several possible answers, return the one with the smallest number of elements. 
+If there are still several answers, return the lexicographically smallest one.
+*/
+
 std::string restoreChemicalFormula(std::vector<std::string> e, std::string f) {
     unordered_map<string,int>m;
     for(int i=0;i<e.size();i++)
